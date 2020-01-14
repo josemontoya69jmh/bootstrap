@@ -1,14 +1,21 @@
 <div class="container">
 	<h2>Componente encabezado</h2>
 	
-	<button type="button" class="btn btn-primary">Primary</button>
-	<button type="button" class="btn btn-secondary">Secondary</button>
+	<button type="button" [routerLink]="['../paginas/pagina1/pagina1.component.html']" routerLinkActive="router-link-active"  class="btn btn-primary">pagina1</button>
+	<button type="button" routerLink = "pagina2" routerLinkActive="router-link-active"   class="btn btn-secondary">Pagina2</button>
 	<button type="button" class="btn btn-success">Success</button>
 	<button type="button" class="btn btn-info">Info</button>
 	<button type="button" class="btn btn-warning">Warning</button>
 	<button type="button" class="btn btn-danger">Danger</button>
 	<button type="button" class="btn btn-dark">Dark</button>
 	
+<a routerLink="/" class="logo"> <span class="icon-home"></span> </a>
 
+  <a routerLink="pagina1" routerLinkActive="router-link-active" class="button">
+    <span> Pagina1</span>
+  </a>
+  <a routerLink="pagina2" routerLinkActive="router-link-active" class="button">
+    <span> Pagina2</span>
+  </a>
 
 </div>
